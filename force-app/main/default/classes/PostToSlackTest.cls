@@ -5,7 +5,7 @@ public class PostToSlackTest {
 		try {
 		PostToSlack.Vars testvars = new PostToSlack.Vars();
             testvars.messageBody = '{"Text":, "Test"}';
-            testvars.slackURL = 'https://hooks.slack.com/services/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';	
+            testvars.slackURL = 'https://slack.com/api/api.test';	
 		PostToSlack.postToSlack(new List<PostToSlack.Vars> { testvars });
 		} catch (Exception e) {
 			success = false;
